@@ -9,22 +9,22 @@ use Illuminate\Support\Facades\Hash;
 class DaftarController extends Controller
 {
     public function daftar(){
-        return view('auth.register');
+        return view('auth.daftar');
     }
 
     public function daftar_proses(Request $request){
         
         if(empty($request->nama) || empty($request->username) || empty($request->email)|| empty($request->password)) {
-            return redirect()->route('register')->withErrors('Seluruh Data Wajib Diisi')->withInput();
+            return redirect()->route('daftar')->withErrors('Seluruh Data Wajib Diisi')->withInput();
         }
 
         $checkUser = User::where('username',$request->username)->first();
         if ($checkUser){
-            return redirect()->route('register')->withErrors('Maaf data anda tidak valid!');
+            return redirect()->route('daftar')->withErrors('Maaf data anda tidak valid!');
         }
         // $checkEmail = User::where('email',$request->email)->first();
         // if ($checkEmail){
-        //     return redirect()->route('register')->withErrors('Akun anda telah Terdaftar!');
+        //     return redirect()->route('daftar')->withErrors('Akun anda telah Terdaftar!');
         // }
 
         dd($request);
@@ -35,7 +35,7 @@ class DaftarController extends Controller
             'password' => Hash::make($request->password),
         ]);
         $user->assignRole('pengguna');
-        return redirect()->route('login');
+        return redirect()->route('masuk');
 
     }
 }

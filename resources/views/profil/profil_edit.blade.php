@@ -31,14 +31,14 @@
                     <div class="form-group">
                       <label for="exampleInputEmail1">Foto Profil</label>
                       <input type="file" class="form-control" id="exampleInputEmail1" name="gambar" placeholder="Pilih File" >
-                      <small>Harap unggah gambar dengan ukuran kurang dari 100KB</small>
-                      @error('gambar')
+                      <small>Harap unggah gambar dengan ukuran kurang dari 2 MB</small>
+                      {{-- @error('gambar')
                       <br>
                           <small> {{$message}} </small>
-                      @enderror
+                      @enderror --}}
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Nama</label>
+                      <label for="exampleInputEmail1">Nama Lengkap</label>
                       @if (auth()->user()->hasRole('admin'))
                       <input type="text" class="form-control" id="exampleInputEmail1" name="nama" value="{{$akun->name}}" readonly>
                       @endif
@@ -50,7 +50,7 @@
                       @enderror
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Username</label>
+                      <label for="exampleInputEmail1">Nama Pengguna</label>
                       @if (auth()->user()->hasRole('admin'))
                       <input type="text" class="form-control" id="exampleInputEmail1" name="username" value="{{$akun->username}}" readonly>
                       @endif

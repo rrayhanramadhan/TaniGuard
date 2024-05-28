@@ -1,11 +1,10 @@
-
 :root {
-    --pr-color : #e0e0e0;
+    --pr-color: #e0e0e0;
 }
 
 .main-sidebar {
     background-color: #475D21 !important;
-  }  
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -15,7 +14,8 @@ body {
 /* navbar style */
 
 .navbar {
-    z-index: 3; /* tingakatan layer*/
+    z-index: 3;
+    /* tingakatan layer*/
 }
 
 * {
@@ -36,7 +36,7 @@ body {
 }
 
 .nav-link {
-    font-size: 16;
+    font-size: 10;
 }
 
 .nav-link.active {
@@ -56,12 +56,31 @@ body {
 .button-primary {
     width: 133px;
     height: 40px;
-    background-color:transparent;
+    background-color: transparent;
     color: #fff;
     border: none;
     font-size: 16px;
     font-weight: 400;
 }
+
+/* sidebar */
+.nav-sidebar .nav-link.active {
+    background-color: #90A56B !important;
+    color: white !important;
+}
+
+.nav-sidebar .nav-link.active i {
+    color: white !important;
+}
+
+/* sidebar */
+
+/* filter pencatatan */
+.filter-select {
+    width: 200px; /* Atur lebar sesuai kebutuhan Anda */
+}
+
+/* filter pencatatan */
 
 /* hero section */
 #hero {
@@ -123,11 +142,12 @@ h2 {
     width: 100%;
     height: 313px;
     border-radius: 5px;
-    background-color : #D6C3AB;
+    background-color: #D6C3AB;
     padding: 40px;
     box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
     transition: all .2s ease-in;
 }
+
 .card-layanan2 {
     position: absolute;
     top: 300px;
@@ -135,21 +155,22 @@ h2 {
     width: 355px;
     height: 314px;
     border-radius: 5px;
-    background-color : rgba(214, 195, 171, 0.05);
+    background-color: rgba(214, 195, 171, 0.05);
     padding: 40px;
 }
 
-.btn-kartu{
+.btn-kartu {
     background-color: #475D21;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition: back ;
+    transition: back;
     box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.1);
 }
-.btn-edit-profil{
+
+.btn-edit-profil {
     margin-bottom: 10px;
     /* position: relative; */
     /* top: px; */
@@ -162,7 +183,7 @@ h2 {
     padding: 5px 30px;
     border-radius: 5px;
     text-decoration: none;
-    transition: back ;
+    transition: back;
     box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -177,6 +198,7 @@ h2 {
     padding: 0;
 
 }
+
 .input-group-text-pw {
     position: absolute;
     right: 10px;
@@ -184,30 +206,36 @@ h2 {
     transform: translateY(-50%);
     cursor: pointer;
     margin-left: 0;
-    padding: 0 10px; /* Sesuaikan nilai ini untuk padding horizontal */
-    border: none; /* Hapus border default */
-    background-color: transparent; /* Hapus background default */
+    padding: 0 10px;
+    /* Sesuaikan nilai ini untuk padding horizontal */
+    border: none;
+    /* Hapus border default */
+    background-color: transparent;
+    /* Hapus background default */
 }
 
 .input-group-pw {
     background-color: transparent;
     border: none;
-    padding-right: 35px; /* Sesuaikan nilai ini dengan lebar icon mata */
+    padding-right: 35px;
+    /* Sesuaikan nilai ini dengan lebar icon mata */
 }
+
 .form-control-pw {
     border: none;
     padding: 0;
 }
 
-.bi-eye, .bi-eye-slash {
+.bi-eye,
+.bi-eye-slash {
     font-size: 18px;
 }
 
-.capitalize-first{
+.capitalize-first {
     text-transform: capitalize;
 }
 
-.form-group-btn{
+.form-group-btn {
     display: flex;
     justify-content: flex-end;
     margin-top: 50px;
@@ -217,15 +245,15 @@ h2 {
     transform: translateY(-50%);
 }
 
-.btn-kartu:hover{
+.btn-kartu:hover {
     background-color: #D6C3AB;
 }
 
-.btn-edit-profil:hover{
+.btn-edit-profil:hover {
     background-color: #D6C3AB;
 }
 
-.profil{
+.profil {
     margin-bottom: 10px;
 }
 
@@ -234,14 +262,14 @@ h2 {
 .circle-icon {
     width: 70px;
     height: 70px;
-    background-color:#D6C3AB;
+    background-color: #D6C3AB;
     border-radius: 50%;
     transition: all .1s ease-in;
 
 }
 
 .card-layanan h3 {
-    color:black;
+    color: black;
     font-size: 24px;
     transition: all .3s ease-in;
 }
@@ -260,12 +288,13 @@ h2 {
     /* transform: translate(-50%, -50%); */
 
 }
-.kartu-deskripsi-dash{
+
+.kartu-deskripsi-dash {
     position: relative;
     bottom: 25px;
 }
 
-.kartu-judul-das{
+.kartu-judul-das {
     position: relative;
     bottom: 25px;
 }
@@ -275,18 +304,19 @@ h2 {
     width: 100%;
     height: 313px;
     border-radius: 5px;
-    background :  rgb(57, 74, 26);
+    background: rgb(57, 74, 26);
     padding: 40px;
     box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
     transition: all .2s ease-in;
 }
+
 .card-layanan2:hover {
     position: absolute;
     top: 300px;
     right: 626px;
     width: 355px;
     border-radius: 5px;
-    background :  rgba(57, 74, 26, 0.05);
+    background: rgba(57, 74, 26, 0.05);
     padding: 40px;
     /* box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05); */
     /* transition: all .2s ease-in; */
@@ -299,7 +329,7 @@ h2 {
 
 .circle-icon:hover {
     width: 70px;
-    height: 70px;  
+    height: 70px;
     background-color: #D6C3AB;
     border-radius: 50%;
     transition: all .2s ease-in;
@@ -321,14 +351,14 @@ h2 {
 
 
 /* Search section */
-#search{
+#search {
     background-image: url(../asset/img/Search\ Bg.png);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#search h2{
+#search h2 {
     color: var(--pr-color);
     text-align: center;
     font-size: 48px;
@@ -336,33 +366,34 @@ h2 {
     font-weight: 600;
     line-height: normal;
 }
-#search p{
+
+#search p {
     color: #ffffff;
     /*background-color: var(--pr-color);*/
     height: 72;
     text-align: center;
 }
 
-.input-cari{
+.input-cari {
     height: 88px;
 }
 
-.input-cari:focus{
+.input-cari:focus {
     border: none;
 }
 
-.input-cari .button-secondary{
-        width: 200px;
-        height: 88px;
-        background-color: rgba(255, 255, 255, 0.8);
-        color: var(--pr-color);
-        font-size: 18px;
-        font-weight: 500;
-        border: none;
-        border-radius: 0 0 0 10px;
+.input-cari .button-secondary {
+    width: 200px;
+    height: 88px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--pr-color);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0 0 0 10px;
 }
 
-.input-cari .button-primary{
+.input-cari .button-primary {
     height: 88px;
     background-color: var(--pr-color);
     font-size: 18px;
@@ -370,18 +401,19 @@ h2 {
     border: none;
     border-radius: 0 10px 0 10px;
 }
+
 .nav-tabs {
     border: none;
 }
 
-.nav-tabs .nav-link.active{
+.nav-tabs .nav-link.active {
     background-color: rgba(255, 255, 255, 0.8);
     color: var(--pr-color);
     border-radius: 0 8px 0 0;
     font-weight: 500;
 }
 
-.nav-tabs .nav-link{
+.nav-tabs .nav-link {
     border: none;
     color: #000000;
 }
@@ -393,51 +425,52 @@ h2 {
     border: none;
 }
 
-.card-body h4{
+.card-body h4 {
     color: #000000;
     font-weight: 600;
     font-size: 24px;
     line-height: .8rem;
 }
-.card-body p{
+
+.card-body p {
     color: #41444b;
     font-weight: 100;
     font-size: 16px;
 
 }
 
-.card:hover{
+.card:hover {
     transition: all ease-in-out .3x;
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8);
     /* background : linear-gradient(160deg, var(--pr-color), rgb(255, 147, 80)); */
 }
 
-.card:hover .card-body h4{
+.card:hover .card-body h4 {
     color: #ffffff;
     transition: all ease-in-out .3x;
 }
 
-.card:hover .card-body p{
+.card:hover .card-body p {
     color: #ffffff;
     transition: all ease-in-out .3x;
 }
 
-.card-fasilitas{
+.card-fasilitas {
     background-color: #fff;
-    
+
 }
 
-.card-fasilitas span{
+.card-fasilitas span {
     font-weight: 500;
     margin-top: 18;
     color: #000000;
 }
 
-.card-fasilitas p{
-    font-size: 16px;    
+.card-fasilitas p {
+    font-size: 16px;
 }
 
-#rekomendasi h2{
+#rekomendasi h2 {
     color: var(--pr-color);
     text-align: center;
     font-size: 48px;

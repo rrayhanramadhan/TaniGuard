@@ -36,23 +36,23 @@
                 
                 <!-- Username input -->
                 <div class="form-outline mb-4">
-                    <label class="form-label" for="form3Example3">Nama Pengguna</label>
-                  <input type="text" id="form3Example3" class="form-control form-control-lg" name="username" value="{{old('username')}}"
-                    placeholder="Masukkan Nama Pengguna">
+                    <label class="form-label" for="form3Example3">Nama lengkap</label>
+                  <input type="text" id="form3Example3" class="form-control form-control-lg" name="nama" value="{{old('nama')}}"
+                    placeholder="Masukkan nama lengkap">
                 </div>
                 <!-- Password input -->
                 <div class="form-outline mb-3">
                   <label class="form-label" for="form3Example4">Kata Sandi</label>
                   <div class="input-group">
                     <input type="text" id="form3Example4" class="form-control form-control-lg" name="password" value="{{old('password')}}"
-                      placeholder="Masukkan Kata Sandi" >
+                      placeholder="Masukkan kata sandi" >
                       <span class="input-group-text password-toggle"><i class="bi bi-eye" id="togglePassword"></i></span>
                 </div>
                 <!-- Nama input -->
                 <div class="form-outline mb-4">
-                  <label class="form-label" for="form3Example3">Nama Lengkap</label>
-                <input type="text" id="form3Example3" class="form-control form-control-lg" name="nama" value="{{old('nama')}}"
-                  placeholder="Masukkan Nama Lengkap">
+                  <label class="form-label" for="form3Example3">Nama pengguna</label>
+                <input type="text" id="form3Example3" class="form-control form-control-lg" name="username" value="{{old('username')}}"
+                  placeholder="Masukkan nama pengguna">
                 </div>
                 </div>
                 <!-- Email input -->

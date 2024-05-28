@@ -21,13 +21,23 @@ class ProfilController extends Controller
     // }
 
     public function profil_update(Request $request,$id){
+        $customMessage = [
+            'password.required'     => 'Data wajib diisi',
+            'nama.required'         => 'Data wajib diisi',
+            'username.required'     => 'Data wajib diisi',
+            'email.required'        => 'Data wajib diisi',
+            'password.min'          => 'Kata sandi minimal 5 karakter',
+            'password.confirmed'    => 'Konfirmasi kata sandi tidak cocok',
+        ];
+
+
         $validator = Validator::make($request->all(),[
             'nama'          => 'required',
             'username'      => 'required',
             'email'         => 'required|email',
             'password'      => 'nullable',
             'gambar'        => 'nullable|mimes:png,jpg,jpeg|max:2048',
-        ]);
+        ],$customMessage);
         
         if($validator->fails()) return redirect()->back()->withInput()->withErrors($validator);
         if(empty($request->nama) || empty($request->username) || empty($request->email) || empty($request->password))  {

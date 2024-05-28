@@ -81,7 +81,7 @@
             <div class="col-md-4 text-center">
               <div class="card-layanan" >
                   <h3 class="" style="margin-top: 70px; margin-bottom:40px">Pencatatan Hama Secara History</h3>
-                  <a href="{{ route('user.pencatatan') }}" class="btn-kartu" style="color:aliceblue;">Lihat Sekarang</a>
+                  <a href="{{ route('riwayat') }}" class="btn-kartu" style="color:aliceblue;">Lihat Sekarang</a>
               </div>
             </div>
             @endif

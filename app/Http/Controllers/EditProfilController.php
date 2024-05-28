@@ -15,13 +15,23 @@ class EditProfilController extends Controller
     }
 
     public function profil_update(Request $request,$id){
+        $customMessage = [
+            'password.required'     => 'Data wajib diisi',
+            'nama.required'         => 'Data wajib diisi',
+            'username.required'     => 'Data wajib diisi',
+            'email.required'        => 'Data wajib diisi',
+            'gambar.mimes'          => 'Gambar harus berupa file berformat png, jpg, atau jpeg',
+            'gambar.max'            => 'Ukuran gambar maksimal 2MB',
+        ];
+
+
         $validator = Validator::make($request->all(),[
             'nama'          => 'required',
             'username'      => 'required',
             'email'         => 'required|email',
             'password'      => 'nullable',
             'gambar'        => 'nullable|mimes:png,jpg,jpeg|max:2048',
-        ]);
+        ],$customMessage);
         
         if($validator->fails()) return redirect()->back()->withInput()->withErrors($validator);
         // if(empty($request->nama) || empty($request->username) || empty($request->email) || empty($request->password))  {
